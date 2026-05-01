@@ -44,6 +44,7 @@ function setBottomContainer() {
 }
 
 function set_score_pos() {
+    if (!$("#buttonCont").length) return;
     $("#container").css('margin-top', '0');
     var middle_of_container = ($("#container").height()/2 + $("#container").offset().top);
     var top_of_bottom_container = $("#buttonCont").offset().top
