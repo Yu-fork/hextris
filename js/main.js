@@ -34,6 +34,7 @@ function scaleCanvas() {
 }
 
 function setBottomContainer() {
+    if (!$("#buttonCont").length) return;
     var buttonOffset = $("#buttonCont").offset().top;
     var playOffset = trueCanvas.height / 2 + 100 * settings.scale;
     var delta = buttonOffset - playOffset - 29;
